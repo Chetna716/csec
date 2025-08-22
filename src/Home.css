@@ -1,8 +1,11 @@
+/* Using custom NeueHaasDisplay font */
+
 .home {
   min-height: 100vh;
-  background-color: #646363;
+  background-color: #868585;
   position: relative;
 }
+
 
 .csec-container {
   position: absolute;
@@ -15,7 +18,7 @@
   font-weight: bold;
   color: #ffffff;
   margin-left: 20px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'NeueHaasDisplay', sans-serif;
   letter-spacing: 0.02em;
 }
 
@@ -37,16 +40,16 @@
   font-weight: 900;
   color: #000;
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'NeueHaasDisplay', sans-serif;
   line-height: 0.9;
 }
 
 .sub-heading {
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: bold;
   color: #333;
   margin: 20px 0 0 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'NeueHaasDisplay', sans-serif;
   line-height: 1.2;
 }
 
@@ -61,18 +64,50 @@
   pointer-events: none;
 }
 
-.hero-text {
+.hero-container {
   position: absolute;
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 11;
+  text-align: center;
+}
+
+.hero-text {
   font-size: 8rem;
   font-weight: 900;
   color: #000;
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'NeueHaasDisplay', sans-serif;
   line-height: 0.9;
-  z-index: 11;
-  text-align: center;
   white-space: nowrap;
+}
+
+.hero-letter {
+  display: inline-block;
+  margin: 0 0.05em;
+}
+
+.hero-tagline {
+  font-family: 'NeueHaasDisplay', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  left: -180px;
+  top: 170%;
+  opacity: 1;
+  z-index: 12;
+}
+
+.tagline {
+  font-family: 'NeueHaasDisplay', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 10px 0 0 20px;
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 15;
+  position: relative;
 }

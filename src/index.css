@@ -1,3 +1,18 @@
+/* Font Face Declarations */
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('/fonts/NeueHaasDisplayBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('/fonts/NeueHaasDisplayBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
 /* Reset CSS */
 * {
   margin: 0;
@@ -8,7 +23,8 @@
 html, body, #root {
   height: 100%;
   width: 100%;
-  font-family: 'Arial', sans-serif;
+  font-family: 'NeueHaasDisplay', sans-serif;
+  font-weight: bold;
 }
 
 /* Global app background */
