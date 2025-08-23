@@ -2,7 +2,7 @@
 
 .home {
   min-height: 100vh;
-  background-color: #868585;
+  background-color: #a6a5a5;
   position: relative;
 }
 
@@ -18,7 +18,7 @@
   font-weight: bold;
   color: #ffffff;
   margin-left: 20px;
-  font-family: 'NeueHaasDisplay', sans-serif;
+  font-family: 'Alliance', sans-serif;
   letter-spacing: 0.02em;
 }
 
@@ -40,7 +40,7 @@
   font-weight: 900;
   color: #000;
   margin: 0;
-  font-family: 'NeueHaasDisplay', sans-serif;
+  font-family: 'Alliance', sans-serif;
   line-height: 0.9;
 }
 
@@ -49,7 +49,7 @@
   font-weight: bold;
   color: #333;
   margin: 20px 0 0 0;
-  font-family: 'NeueHaasDisplay', sans-serif;
+  font-family: 'Alliance', sans-serif;
   line-height: 1.2;
 }
 
@@ -74,11 +74,11 @@
 }
 
 .hero-text {
-  font-size: 8rem;
+  font-size: 12rem;
   font-weight: 900;
   color: #000;
   margin: 0;
-  font-family: 'NeueHaasDisplay', sans-serif;
+  font-family: 'Alliance', sans-serif;
   line-height: 0.9;
   white-space: nowrap;
 }
@@ -89,19 +89,19 @@
 }
 
 .hero-tagline {
-  font-family: 'NeueHaasDisplay', sans-serif;
+  font-family: 'Alliance', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   color: #000;
   position: absolute;
-  left: -180px;
-  top: 170%;
+  left: 30px;
+  top: 130%;
   opacity: 1;
   z-index: 12;
 }
 
 .tagline {
-  font-family: 'NeueHaasDisplay', sans-serif;
+  font-family: 'Alliance', sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
   color: #ffffff;

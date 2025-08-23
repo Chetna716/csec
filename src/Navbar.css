@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: 5px 30px;
   z-index: 12;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .nav-item {
-  font-family: 'NeueHaasDisplay', sans-serif;
+  font-family: 'Alliance', sans-serif;
   font-size: 1rem;
   font-weight: bold;
   color: #000;
@@ -43,6 +43,9 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .nav-item::before {
@@ -61,7 +64,7 @@
 }
 
 .get-in-touch {
-  font-family: 'NeueHaasDisplay', sans-serif;
+  font-family: 'Alliance', sans-serif;
   font-size: 1rem;
   font-weight: bold;
   color: #000;

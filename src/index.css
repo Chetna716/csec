@@ -1,5 +1,33 @@
 /* Font Face Declarations */
 @font-face {
+  font-family: 'Alliance';
+  src: url('/Alliance Font Family/Degarism Studio - Alliance No.1 Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alliance';
+  src: url('/Alliance Font Family/Degarism Studio - Alliance No.2 Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alliance';
+  src: url('/Alliance No.1 SemiBold/Alliance No.1 SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alliance';
+  src: url('/Alliance No.2 Bold/Alliance No.2 Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'NeueHaasDisplay';
   src: url('/fonts/NeueHaasDisplayBold.ttf') format('truetype');
   font-weight: bold;
@@ -23,8 +51,8 @@
 html, body, #root {
   height: 100%;
   width: 100%;
-  font-family: 'NeueHaasDisplay', sans-serif;
-  font-weight: bold;
+  font-family: 'Alliance', sans-serif;
+  font-weight: normal;
 }
 
 /* Global app background */

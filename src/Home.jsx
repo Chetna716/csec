@@ -1,10 +1,12 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import './Home.css';
 import Navbar from './Navbar';
+import About from './About';
 
 const Home = () => {
   const textRef = useRef(null);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   useEffect(() => {
     const letters = textRef.current.querySelectorAll('.letter');
@@ -12,7 +14,7 @@ const Home = () => {
     const subHeading = document.querySelector('.sub-heading');
     const whiteOverlay = document.querySelector('.white-overlay');
     const heroLetters = document.querySelectorAll('.hero-letter');
-    const tagline = document.querySelector('.tagline');
+    const heroTagline = document.querySelector('.hero-tagline');
     
     // Set initial state - letters invisible
     gsap.set(letters, { opacity: 0, y: 50 });
@@ -20,7 +22,7 @@ const Home = () => {
     gsap.set(subHeading, { opacity: 0, y: 50 });
     gsap.set(whiteOverlay, { x: '100%' });
     gsap.set(heroLetters, { opacity: 0, y: 200 });
-    gsap.set(tagline, { opacity: 0, y: 30 });
+    gsap.set(heroTagline, { opacity: 0, y: 30 });
     
     // Create timeline
     const tl = gsap.timeline();
@@ -33,13 +35,6 @@ const Home = () => {
       stagger: 0.15,
       ease: "power2.out"
     })
-    // Animate tagline right after letters
-    .to(tagline, {
-      opacity: 1,
-      y: 0,
-      duration: 0.5,
-      ease: "power2.out"
-    }, "-=0.3")
     // White overlay sweeps completely from right to left across screen
     .to(whiteOverlay, {
       x: '-50%',
@@ -67,12 +62,19 @@ const Home = () => {
       y: 0,
       duration: 0.4,
       ease: "power2.out"
-    }, "-=0.2");
+    }, "-=0.2")
+    // Animate hero tagline with navbar (at 2.5 seconds to sync with navbar animation)
+    .to(heroTagline, {
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      ease: "power2.out"
+    }, 2.5);
   }, []);
 
   return (
     <div className="home">
-      <Navbar />
+      <Navbar onAboutClick={() => setAboutOpen(true)} />
       <div className="white-overlay"></div>
       <div className="hero-container">
         <h1 className="hero-text">
@@ -98,6 +100,7 @@ const Home = () => {
           <span className="letter">C</span>
         </h1>
       </div>
+      <About isOpen={aboutOpen} onClose={() => setAboutOpen(false)} />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ onAboutClick }) => {
   useEffect(() => {
     const navItems = document.querySelectorAll('.nav-item');
     const getInTouch = document.querySelector('.get-in-touch');
@@ -36,7 +36,7 @@ const Navbar = () => {
         <img src="/cseclogo.PNG" alt="CSEC" className="logo" />
       </div>
       <div className="nav-center">
-        <a href="#about" className="nav-item">ABOUT</a>
+        <button onClick={onAboutClick} className="nav-item">ABOUT</button>
         <a href="#gallery" className="nav-item">GALLERY</a>
         <a href="#team" className="nav-item">TEAM</a>
       </div>
